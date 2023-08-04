@@ -1,0 +1,76 @@
+<!--Marina De Castro-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Validator</title>
+</head>
+<style>
+    body{
+        text-align:center;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/013/784/235/original/aesthetic-cute-abstract-purple-and-white-distorted-checkers-checkerboard-wallpaper-illustration-perfect-for-backdrop-wallpaper-background-banner-cover-vector.jpg);
+        background-repeat: no-repeat;
+        background-size: cover contain;
+    }
+    /*Label for first and last name, and zip code*/
+    label{
+        text-decoration:underline 2px white;
+        color: rgb(48, 3, 52);
+    }
+    /*Header*/
+    h2{
+        color: rgb(30, 1, 31);
+        text-decoration: underline 2px white;
+        
+    }
+    /*first and last name, and zip code that is shown*/
+    p{
+        color: rgb(46, 0, 67);
+        font-size: 20px;
+    }
+    /*Image*/
+    #image1{
+        height: 350px;
+        width: 350px;
+        float: right;
+        margin-top: -50px;
+    }
+    /*Information*/
+    .form{
+        background-color: rgba(235, 161, 255, 0.751);
+        padding-bottom: 20px;
+        margin-left: 450px;
+        margin-right: 450px;
+        outline: solid black;
+    }
+</style>
+<body>
+    
+<!--Information-->
+    <div class="form">
+    <h2>Enter your Information</h2>
+    <p id="f&lname"></p>
+    <p id="zipcode"></p>
+
+<!--Input First Name-->
+        <label id="fname_label">First Name:</label>&nbsp;&nbsp;<input id="fname_input" type="text" >
+        <br>
+        <br>
+<!--Input Last Name-->
+        <label id="lname_label">Last Name:</label>&nbsp;&nbsp;<input id="lname_input" type="text">
+        <br>
+        <br>
+<!--Input Zip Code-->
+        <label id="zip_label">Zip Code:</label>&nbsp;&nbsp;<input id="zip_input" type="text">
+        <br>
+        <br>
+<!--Submit the inputs to check for validation-->
+        <button onclick="strcheck()" style="text-align: center;">Submit</button>
+        <br></div>
+        
+<!--Image-->
+        <img id="image1" src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/2c/ThinkingHelpy.png/revision/latest?cb=20190327202335" >
+</body>
+<script src="strings 3.2.js"></script>
+</html>
